@@ -1109,6 +1109,7 @@ NONE
    },
    ...
 }
+```
 
 # Filters
 Filters define trading rules on a market or an exchange.
