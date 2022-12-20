@@ -2,7 +2,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Public Rest API for Xchange (2019-11-22)](#public-rest-api-for-altquick-2022-09-10)
+- [Public Rest API for exchange (2019-11-22)](#public-rest-api-for-altquick-2022-09-10)
   - [General API Information](#general-api-information)
   - [HTTP Return Codes](#http-return-codes)
   - [Error Codes](#error-codes)
@@ -50,7 +50,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# Public Rest API for Xchange (2019-11-22)
+# Public Rest API for exchange (2019-11-22)
 
 ## General API Information
 * The base endpoint is: **https://altquick.com/**
@@ -64,7 +64,7 @@
   the issue is on the sender's side.
 * HTTP `429` return code is used when breaking a request rate limit.
 * HTTP `5XX` return codes are used for internal errors; the issue is on
-  Xchange's side.
+  exchange's side.
 
 ## Error Codes
 * Any endpoint can return an ERROR
