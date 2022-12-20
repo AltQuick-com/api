@@ -42,6 +42,8 @@
      - [Markets](#markets)
      - [Ticker](#ticker)
      - [Assets](#assets)
+     - [Orderbook](#orderbook)
+     - [Trades](#trades)
 - [Filters](#filters)
   - [Market filters](#market-filters)
     - [PRICE_FILTER](#price_filter)
@@ -1111,14 +1113,17 @@ NONE
 }
 ```
 
-###
+### Orderbook
 ```
 GET /api/v2/orderbook/{MARKET_PAIR}
 ```
 The order book endpoint is to provide a complete level 2 order book (arranged by best asks/bids) with full depth returned for a given market pair.
 
 **Parameters:**
-NONE
+Name | Type | Mandatory | Description
+------------ | ------------ | ------------ | ------------
+limit | LONG | NO | Not defined or 0 = full order book
+depth | LONG | NO | Level 1 – Only the best bid and ask. Level 2 – Arranged by best bids and asks.
 
 **Response:**
 ```javascript
@@ -1151,7 +1156,7 @@ NONE
 ```
 
 
-###
+### Trades
 ```
 GET /api/v2/trades/{MARKET_PAIR}
 ```
