@@ -1038,6 +1038,76 @@ NONE
 }
 ```
 
+###
+```
+GET /api/v2/assets
+```
+The assets endpoint is to provide a detailed summary for each currency available on the exchange.
+
+**Parameters:**
+NONE
+
+**Response:**
+```javascript
+
+{
+   "42":{
+      "name":"42-coin",
+      "unified_cryptoasset_id":93,
+      "can_withdraw":"true",
+      "can_deposit":"true",
+      "min_withdraw":"0.00001001",
+      "max_withdraw":"0.40423208",
+      "maker_fee":"0.002",
+      "taker_fee":"0.002"
+   },
+   "AVAX":{
+      "name":"Avalanche",
+      "unified_cryptoasset_id":5805,
+      "can_withdraw":"true",
+      "can_deposit":"true",
+      "min_withdraw":"0.01100000",
+      "max_withdraw":"47.04644921",
+      "maker_fee":"0.002",
+      "taker_fee":"0.002"
+   },
+   ...
+}
+```
+
+
+###
+```
+GET /api/v2/ticker
+```
+The ticker endpoint is to provide a 24-hour pricing and volume summary for each market pair available on the exchange.
+
+**Parameters:**
+NONE
+
+**Response:**
+```javascript
+
+{
+   "BTC_42":{
+      "base_id":93,
+      "quote_id":1,
+      "last_price":"1.15",
+      "base_volume":"0.000000",
+      "quote_volume":"0.00000000",
+      "isFrozen":"false"
+   },
+   "BTC_AVAX":{
+      "base_id":5805,
+      "quote_id":1,
+      "last_price":"0.0007",
+      "base_volume":"0.0000",
+      "quote_volume":"0.00000000",
+      "isFrozen":"false"
+   },
+   ...
+}
+
 # Filters
 Filters define trading rules on a market or an exchange.
 Filters come in two forms: `market filters` and `exchange filters`.
