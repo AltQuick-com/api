@@ -1122,8 +1122,8 @@ The order book endpoint is to provide a complete level 2 order book (arranged by
 **Parameters:**
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
-limit | LONG | NO | Not defined or 0 = full order book
-depth | LONG | NO | Level 1 – Only the best bid and ask. Level 2 – Arranged by best bids and asks.
+level | LONG | NO |  Level 1 – Only the best bid and ask. Level 2 – Arranged by best bids and asks.
+depth | LONG | NO |  Not defined or 0 = full order book
 
 **Response:**
 ```javascript
