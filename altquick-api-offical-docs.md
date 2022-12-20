@@ -40,6 +40,8 @@
     - [New deposit address (USER_DATA)](#new-deposit-address-user_data)
   - [Api v2](#api-v2)
      - [Markets](#markets)
+     - [Ticker](#ticker)
+     - [Assets](#assets)
 - [Filters](#filters)
   - [Market filters](#market-filters)
     - [PRICE_FILTER](#price_filter)
@@ -1038,7 +1040,7 @@ NONE
 }
 ```
 
-###
+### Assets
 ```
 GET /api/v2/assets
 ```
@@ -1076,7 +1078,7 @@ NONE
 ```
 
 
-###
+### Ticker
 ```
 GET /api/v2/ticker
 ```
