@@ -39,7 +39,7 @@
     - [Deposit address (USER_DATA)](#deposit-address-user_data)
     - [New deposit address (USER_DATA)](#new-deposit-address-user_data)
   - [Api v2](#api-v2)
-     - [Markets](#markets-v2)
+     - [Markets](#markets)
 - [Filters](#filters)
   - [Market filters](#market-filters)
     - [PRICE_FILTER](#price_filter)
@@ -992,8 +992,8 @@ timestamp | LONG | YES |
   }
 ]
 ```
-## Account endpoints
-###
+## Api v2
+### Markets
 ```
 GET /api/v2/markets
 ```
