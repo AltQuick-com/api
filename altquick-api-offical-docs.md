@@ -1111,6 +1111,79 @@ NONE
 }
 ```
 
+###
+```
+GET /api/v2/orderbook/{MARKET_PAIR}
+```
+The order book endpoint is to provide a complete level 2 order book (arranged by best asks/bids) with full depth returned for a given market pair.
+
+**Parameters:**
+NONE
+
+**Response:**
+```javascript
+
+{
+   "timestamp": "1671507684",
+   "bids": [
+     [
+       "0.000003",
+       "24110.05"
+     ],
+     [
+       "0.000002",
+       "92525.05"
+     ],
+     ...
+   ],
+   "asks": [
+     [
+       "0.000004",
+       "658.37"
+     ],
+     [
+       "0.000005",
+       "8781.73"
+     ],
+     ...
+   ]
+}
+```
+
+
+###
+```
+GET /api/v2/trades/{MARKET_PAIR}
+```
+The trades endpoint is to return data on all recently completed trades for a given market pair.
+
+**Parameters:**
+NONE
+
+**Response:**
+```javascript
+
+[
+   {
+     "trade_id": 20690,
+     "price": "0.00000400",
+     "base_volume": "0.00007200",
+     "quote_volume": "0.00000018",
+     "timestamp": 1671502762894,
+     "type": "buy"
+   },
+   {
+     "trade_id": 20689,
+     "price": "0.00000400",
+     "base_volume": "0.00011200",
+     "quote_volume": "0.00000028",
+     "timestamp": 1671484043527,
+     "type": "buy"
+   },
+   ...  
+]
+```
+
 # Filters
 Filters define trading rules on a market or an exchange.
 Filters come in two forms: `market filters` and `exchange filters`.
