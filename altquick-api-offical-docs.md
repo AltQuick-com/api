@@ -38,6 +38,8 @@
     - [Withdraw history (USER_DATA)](#withdraw-history-user_data)
     - [Deposit address (USER_DATA)](#deposit-address-user_data)
     - [New deposit address (USER_DATA)](#new-deposit-address-user_data)
+  - [Api v2](#api-v2)
+     - [Markets](#markets-v2)
 - [Filters](#filters)
   - [Market filters](#market-filters)
     - [PRICE_FILTER](#price_filter)
@@ -242,51 +244,6 @@ NONE
 {
     "timezone": "UTC"
     "serverTime": 1573509210273
-}
-```
-
-###
-```
-GET /api/v2/markets
-```
-The markets (summary) endpoint is to provide an overview of market data for all tickers and all market pairs on the exchange.
-
-**Parameters:**
-NONE
-
-**Response:**
-```javascript
-
-{
-  "BTC_42":
-  {
-    "trading_pairs":"BTC_42",
-    "base_currency":"42",
-    "quote_currency":"BTC",
-    "last_price":"1.15",
-    "lowest_ask":"1.90",
-    "highest_bid":"1.45",
-    "price_change_percent_24h":"0",
-    "base_volume":"0.000000",
-    "quote_volume":"0.00000000",
-    "highest_price_24h":"0.00",
-    "lowest_price_24h":"0.00"
-    },
-  "BTC_AVAX":
-  {
-    "trading_pairs":"BTC_AVAX",
-    "base_currency":"AVAX",
-    "quote_currency":"BTC",
-    "last_price":"0.0007",
-    "lowest_ask":"0.0008",
-    "highest_bid":"0.0007",
-    "price_change_percent_24h":"0",
-    "base_volume":"0.0000",
-    "quote_volume":"0.00000000",
-    "highest_price_24h":"0.0000",
-    "lowest_price_24h":"0.0000"
-  },
-  ...
 }
 ```
 
@@ -1035,8 +992,51 @@ timestamp | LONG | YES |
   }
 ]
 ```
+## Account endpoints
+###
+```
+GET /api/v2/markets
+```
+The markets (summary) endpoint is to provide an overview of market data for all tickers and all market pairs on the exchange.
 
+**Parameters:**
+NONE
 
+**Response:**
+```javascript
+
+{
+  "BTC_42":
+  {
+    "trading_pairs":"BTC_42",
+    "base_currency":"42",
+    "quote_currency":"BTC",
+    "last_price":"1.15",
+    "lowest_ask":"1.90",
+    "highest_bid":"1.45",
+    "price_change_percent_24h":"0",
+    "base_volume":"0.000000",
+    "quote_volume":"0.00000000",
+    "highest_price_24h":"0.00",
+    "lowest_price_24h":"0.00"
+    },
+  "BTC_AVAX":
+  {
+    "trading_pairs":"BTC_AVAX",
+    "base_currency":"AVAX",
+    "quote_currency":"BTC",
+    "last_price":"0.0007",
+    "lowest_ask":"0.0008",
+    "highest_bid":"0.0007",
+    "price_change_percent_24h":"0",
+    "base_volume":"0.0000",
+    "quote_volume":"0.00000000",
+    "highest_price_24h":"0.0000",
+    "lowest_price_24h":"0.0000"
+  },
+  ...
+}
+```
 
 # Filters
 Filters define trading rules on a market or an exchange.
