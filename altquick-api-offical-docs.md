@@ -1,8 +1,8 @@
+If you want to trade on our exchange accountless using market orders, please see our AltQuick.com/swap API: https://altquick.com/swap/api.html
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-If you want to trade on our exchange accountless using market orders, please see our AltQuick.com/swap API: https://altquick.com/swap/api.html
 
 - [Public Rest API for exchange (2019-11-22)](#public-rest-api-for-altquick-2022-09-10)
   - [General API Information](#general-api-information)
