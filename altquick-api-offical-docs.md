@@ -634,12 +634,12 @@ Check an order's status.
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 market | STRING | YES |
-orderId | LONG | NO |
+orderID | LONG | NO |
 recvWindow | LONG | NO | The value cannot be greater than ```60000```
 timestamp | LONG | YES |
 
 Notes:
-* Either `orderId` or `origClientOrderId` must be sent.
+* Either `orderID` or `origClientOrderID` must be sent.
 
 **Response:**
 ```javascript
@@ -667,11 +667,11 @@ Cancel an active order.
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 market | STRING | YES |
-orderId | LONG | NO |
+orderID | LONG | NO |
 recvWindow | LONG | NO | The value cannot be greater than ```60000```
 timestamp | LONG | YES |
 
-Either `orderId` or `origClientOrderId` must be sent.
+Either `orderID` or `origClientOrderID` must be sent.
 
 **Response:**
 ```javascript
@@ -732,7 +732,7 @@ Get all account orders; active, canceled, or filled.
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 market | STRING | YES |
-orderId | LONG | NO |
+orderID | LONG | NO |
 startTime | LONG | NO |
 endTime | LONG | NO |
 limit | INT | NO | Default 500; max 1000.
@@ -740,7 +740,7 @@ recvWindow | LONG | NO | The value cannot be greater than ```60000```
 timestamp | LONG | YES |
 
 **Notes:**
-* If `orderId` is set, it will get orders >= that `orderId`. Otherwise most recent orders are returned.
+* If `orderID` is set, it will get orders >= that `orderID`. Otherwise most recent orders are returned.
 
 **Response:**
 ```javascript
