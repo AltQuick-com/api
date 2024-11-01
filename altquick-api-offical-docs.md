@@ -807,7 +807,7 @@ Request a withdraw for a specific market.
 
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
-symbol | STRING | YES |
+asset | STRING | YES |
 destination | string | NO |
 quantity | DECIMAL | NO |
 recvWindow | LONG | NO | The value cannot be greater than ```60000```
@@ -882,7 +882,7 @@ Get deposits for a specific account and market.
 
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
-symbol | STRING | NO |
+asset | STRING | NO |
 startTime | LONG | NO |
 endTime | LONG | NO |
 limit | INT | NO | Default 500; max 1000.
@@ -920,7 +920,7 @@ Get withdrawals for a specific account and symbol.
 
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
-symbol | STRING | YES |
+asset | STRING | YES |
 startTime | LONG | NO |
 endTime | LONG | NO |
 limit | INT | NO | Default 500; max 1000.
