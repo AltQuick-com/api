@@ -1,4 +1,4 @@
-If you want to trade on our exchange accountless using market orders, please see our AltQuick.com/swap API: https://altquick.com/swap/api.html
+If you want to trade on our exchange accountless using market orders, please see our AltQuick.com/swap API: https://github.com/AltQuick-com/api/blob/master/swap-api.md
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
