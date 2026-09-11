@@ -1,4 +1,4 @@
-If you want to trade on the AltQuick exchange with an account, please see the [AltQuick REST API](./altquick-api-offical-docs.md).
+If you want to trade on the AltQuick exchange with an account, please see the https://github.com/AltQuick-com/api/blob/master/altquick-api-offical-docs.md.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
