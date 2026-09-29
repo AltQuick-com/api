@@ -681,6 +681,8 @@ DELETE /api/v1/order  (HMAC SHA256)
 ```
 Cancel an active order.
 
+When an order is cancelled without a fill, it is removed from the database and the reserved balance is returned to the user. No fee is taken.
+
 **Parameters:**
 
 Name | Type | Mandatory | Description
